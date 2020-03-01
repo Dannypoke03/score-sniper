@@ -88,6 +88,7 @@ def cleanUrl(text):
 def get_url(url):
     header_dat = {
         'User-Agent':'Mozilla/5.0'
+        'upgrade-insecure-requests: 1'
         }
     req = Request(url,headers=header_dat)
     response = urlopen(req)
